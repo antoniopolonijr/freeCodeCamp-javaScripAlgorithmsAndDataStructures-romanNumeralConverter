@@ -84,25 +84,30 @@
     <main class="section-projects" id="project">
       <div class="container">
         <h2 class="title">Roman Numeral Converter</h2>
-        <div class="palindrome-div">
-          <label for="text-input">Enter a number: </label>
-          <input
-            class="palindrome-input"
-            id="text-input"
-            value=""
-            type="text"
-            placeholder="Enter your text here"
-          />
-          <button class="palindrome-btn button" id="check-btn">Check</button>
-          <div class="results-div hidden" id="result"></div>
-        </div>
-        <div class="palindrome-definition-div">
-          <p class="palindrome-definition">
-            <span role="img" aria-label="light-bulb">&#128161;</span>
-            A <dfn>palindrome</dfn> is a word or phrase that can be read the
-            same way forwards and backwards, ignoring punctuation, case, and
-            spacing.
-          </p>
+        <div class="roman-numeral-converter-div">
+          <form>
+            <label for="number">Enter a number: </label>
+            <input
+              class="roman-numeral-converter-input"
+              id="number"
+              name="number"
+              value=""
+              type="number"
+              placeholder="Enter your number here"
+            />
+            <button
+              type="submit"
+              class="roman-numeral-converter-btn button"
+              id="convert-btn"
+            >
+              Convert
+            </button>
+          </form>
+          <div class="blackbox">
+            <div class="roman-numeral-converter-output-div" id="output">
+              TEST
+            </div>
+          </div>
         </div>
       </div>
     </main>
